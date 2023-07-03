@@ -1,5 +1,6 @@
 # Machinic
 Machinic is a game where you can create machines (in this game called as "projects").
+This repo is partially built with the `git` CLI tool. First time using that!
 ## The Machinic Dictionary
 |Word|Meaning|
 |:-:|:-:|
@@ -11,5 +12,3 @@ Machinic is a game where you can create machines (in this game called as "projec
 |:-:|:-:|:-:|
 |![Flipper](blocks/flipper0.png)|Flipper|Can toggle the ability to function for next blocks|
 |![Lighter](blocks/lighter0.png)|Lighter|"Lights up" when **ON**|
-
-hi
