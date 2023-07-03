@@ -1,11 +1,13 @@
 import pygame
 from glob import glob
+import os
 
 surf = pygame.display.set_mode((384, 256))
+pathSep = os.path.join("e", "e").replace("e", "")
 blockDict = {}
 blockNum = None
-for blockPath in glob("blocks/*"):
-	block = blockPath.split(".")[0].split("/")[1]
+for blockPath in glob(f"blocks{pathSep}*"):
+	block = blockPath.split(".")[0].split(pathSep)[1]
 	blockNum = ""
 	for char in block:
 		blockNum += char
@@ -25,5 +27,8 @@ pygame.display.set_caption(" ".join(["Machinic", verStr]), " ".join(["Machinic",
 running = True
 
 while running:
+	for event in pygame.event.get():
+		if event.type == pygame.QUIT:
+			running = False
 	surf.fill("White")
 	pygame.display.update()
