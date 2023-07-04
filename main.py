@@ -35,6 +35,6 @@ while running:
 	surf.fill("White")
 	count = 0
 	for block in blockDict.keys():
-		surf.blit(blockDict[block][0], (8, 8 + (count * 40)))
+		surf.blit(blockDict[block][1], (8, 8 + (count * 40)))
 		count += 1
 	pygame.display.update()

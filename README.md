@@ -13,3 +13,4 @@ This repo is partially built with the `git` CLI tool. First time using that!
 |:-:|:-:|:-:|
 |![Flipper](blocks/flipper0.png)|Flipper|Can toggle the ability to function for next blocks|
 |![Lighter](blocks/lighter0.png)|Lighter|"Lights up" when **ON**|
+|![Shy-Block](blocks/shy-block0.png)|Shy-Block|"Hides" next blocks and itself|
