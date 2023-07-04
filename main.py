@@ -2,7 +2,7 @@ import pygame
 from glob import glob
 import os
 
-surf = pygame.display.set_mode((384, 256))
+surf = pygame.display.set_mode((576, 384))
 pathSep = os.path.join("e", "e").replace("e", "")
 blockDict = {}
 blockNum = None
@@ -11,11 +11,13 @@ for blockPath in glob(f"blocks{pathSep}*"):
 	blockNum = ""
 	for char in block:
 		blockNum += char
-	while not blockNum.isdigit():
+	while not (blockNum.isdigit() or blockNum == ""):
 		blockNum = list(blockNum)
 		print(blockNum)
 		blockNum.pop(0)
 		blockNum = "".join(blockNum)
+	if blockNum == "":
+		continue
 	if not block.replace(blockNum, "") in list(blockDict.keys()):
 		blockDict.update({block.replace(blockNum, ""): {int(blockNum): pygame.image.load(blockPath)}})
 	else:
@@ -31,4 +33,8 @@ while running:
 		if event.type == pygame.QUIT:
 			running = False
 	surf.fill("White")
+	count = 0
+	for block in blockDict.keys():
+		surf.blit(blockDict[block][0], (8, 8 + (count * 40)))
+		count += 1
 	pygame.display.update()
