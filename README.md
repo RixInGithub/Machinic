@@ -11,6 +11,8 @@ This repo is partially built with the `git` CLI tool. First time using that!
 ## A list of the blocks in Machinic
 |Image|Name|Description|
 |:-:|:-:|:-:|
-|![Flipper](blocks/flipper0.png)|Flipper|Can toggle the ability to function for next blocks|
-|![Lighter](blocks/lighter0.png)|Lighter|"Lights up" when **ON**|
-|![Shy-Block](blocks/shy-block0.png)|Shy-Block|"Hides" next blocks and itself|
+|![Flipper](blocks/flipper0.png)|Flipper|Can toggle the ability to function for next blocks.|
+|![Lighter](blocks/lighter0.png)|Lighter|"Lights up" when **ON**.|
+|![Shy-Block](blocks/shy-block0.png)|Shy-Block|"Hides" next blocks and itself.|
+|![Filler](blocks/filler0.png)|Filler|Duplicates itself when **ON**.|
+|![Multi-Filler](blocks/multi-filler0.png)|Multi-Filler|Same as previous; when right-clicked, lets you change duplication qty..|
